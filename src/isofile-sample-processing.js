@@ -504,6 +504,24 @@ ISOFile.prototype.getSample = function(trak, sampleNum) {
 		return null;
 	}
 
+	var moof = this.moofs[sample.moof_number - 1];
+	if (!moof) {
+		Log.debug("ISOFile", "Where's the moof?");
+		return null;
+	}
+
+	var traf = moof.trafs[0];
+	if (!traf) {
+		Log.debug("ISOFile", "Where's the traf?");
+		return null;
+	}
+
+	if (traf.senc) {
+		var senc_sample = traf.senc.samples[sample.number_in_traf];
+		sample.encrypted = true;
+		sample.InitializationVector = senc_sample.InitializationVector;
+	}
+
 	if (!sample.data) {
 		/* Not yet fetched */
 		sample.data = new Uint8Array(sample.size);
