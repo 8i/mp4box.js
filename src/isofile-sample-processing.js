@@ -419,7 +419,7 @@ ISOFile.prototype.updateSampleLists = function() {
 							sample.duration = trun.sample_duration[k];
 						}
 						trak.samples_duration += sample.duration;
-						if (trak.first_traf_merged || k > 0) {
+						if (k > 0) {
 							sample.dts = trak.samples[trak.samples.length-2].dts+trak.samples[trak.samples.length-2].duration;
 						} else {
 							if (traf.tfdt) {
@@ -427,7 +427,6 @@ ISOFile.prototype.updateSampleLists = function() {
 							} else {
 								sample.dts = 0;
 							}
-							trak.first_traf_merged = true;
 						}
 						sample.cts = sample.dts;
 						if (trun.flags & BoxParser.TRUN_FLAGS_CTS_OFFSET) {
