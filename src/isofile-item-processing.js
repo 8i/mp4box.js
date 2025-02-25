@@ -1,5 +1,3 @@
-ISOFile.prototype.items = [];
-ISOFile.prototype.entity_groups = [];
 /* size of the buffers allocated for samples */
 ISOFile.prototype.itemsDataSize = 0;
 
@@ -28,6 +26,7 @@ ISOFile.prototype.flattenItemInfo = function() {
 		}
 		item.content_type = meta.iinf.item_infos[i].content_type;
 		item.content_encoding = meta.iinf.item_infos[i].content_encoding;
+		item.item_uri_type = meta.iinf.item_infos[i].item_uri_type;
 	}
 	if (meta.grpl) {
 		for (i = 0; i < meta.grpl.boxes.length; i++) {
@@ -51,7 +50,6 @@ ISOFile.prototype.flattenItemInfo = function() {
 				case 0: // offset into the file referenced by the data reference index
 				break;
 				case 1: // offset into the idat box of this meta box
-				Log.warn("Item storage with construction_method : not supported");
 				break;
 				case 2: // offset into another item
 				Log.warn("Item storage with construction_method : not supported");
@@ -62,6 +60,9 @@ ISOFile.prototype.flattenItemInfo = function() {
 			for (j = 0; j < itemloc.extents.length; j++) {
 				item.extents[j] = {};
 				item.extents[j].offset = itemloc.extents[j].extent_offset + itemloc.base_offset;
+				if (itemloc.construction_method == 1) {
+					item.extents[j].offset += meta.idat.start + meta.idat.hdr_size;
+				}
 				item.extents[j].length = itemloc.extents[j].extent_length;
 				item.extents[j].alreadyRead = 0;
 				item.size += item.extents[j].length;
