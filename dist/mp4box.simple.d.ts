@@ -1,0 +1,60 @@
+import { H as bxmlBox, Q as dinfBox, L as edtsBox, al as emsgBox, ab as etypBox, x as freeBox, aG as ftypBox, a9 as grplBox, $ as hinfBox, z as hmhdBox, _ as hntiBox, w as idatBox, E as iodsBox, a8 as ipcoBox, I as iproBox, a7 as iprpBox, aa as j2kHBox, v as mdatBox, aY as mdhdBox, N as mdiaBox, Z as mecoBox, a$ as mfhdBox, Y as mfraBox, P as minfBox, V as moofBox, J as moovBox, U as mvexBox, b2 as mvhdBox, A as nmhdBox, a3 as rinfBox, a4 as schiBox, ca as sencBox, cc as sidxBox, a2 as sinfBox, y as skipBox, cf as ssixBox, R as stblBox, a1 as strdBox, a0 as strkBox, cs as stypBox, cx as tfdtBox, cy as tfhdBox, cA as tkhdBox, W as trafBox, K as trakBox, a5 as trgrBox, cL as trunBox, a6 as udtaBox, X as vttcBox, G as xmlBox } from './log-sJP8kdOx.js';
+export { B as Box, dL as BoxKind, e0 as Charset, dd as ContainerBox, dS as Description, e7 as EncodedLengthStringType, e5 as EncodedStringType, e2 as EndianNumberType, e8 as EndianStringType, dV as EntityGroup, d_ as Entry, dI as Extends, dO as ExtractedTrack, ec as FnType, dN as FragmentedTrack, F as FullBox, ea as GetterSetterType, dB as ISOFile, dT as IncompleteBox, dG as InstanceOf, dA as IsoFileOptions, dU as Item, dH as KindOf, e6 as LengthStringType, dC as Log, dE as MP4Box, a as MP4BoxStream, dX as Matrix, dR as Movie, M as MultiBufferStream, dY as Nalu, dZ as NaluArray, dK as NumberTuple, e3 as NumberType, O as Output, ee as ParsedType, d$ as Reference, S as Sample, dM as SampleEntryKind, dP as SampleGroup, de as SampleGroupEntry, dz as SampleGroupInfo, e1 as SimpleNumberType, e4 as SimpleStringType, dg as SingleItemTypeReferenceBox, dh as SingleItemTypeReferenceBoxLarge, e9 as StringType, eh as StructDataFromStructDefinition, ef as StructDefinition, dW as SubSample, dQ as Track, df as TrackGroupTypeBox, di as TrackReferenceTypeBox, dJ as TupleOf, eb as TupleType, ed as Type, T as TypedArray, eg as ValueFromType, dF as ValueOf, dv as createFile, dk as parseHex16, dl as parseOneBox, dj as parseUUID } from './log-sJP8kdOx.js';
+
+declare const SIMPLE_BOXES_bxmlBox: typeof bxmlBox;
+declare const SIMPLE_BOXES_dinfBox: typeof dinfBox;
+declare const SIMPLE_BOXES_edtsBox: typeof edtsBox;
+declare const SIMPLE_BOXES_emsgBox: typeof emsgBox;
+declare const SIMPLE_BOXES_etypBox: typeof etypBox;
+declare const SIMPLE_BOXES_freeBox: typeof freeBox;
+declare const SIMPLE_BOXES_ftypBox: typeof ftypBox;
+declare const SIMPLE_BOXES_grplBox: typeof grplBox;
+declare const SIMPLE_BOXES_hinfBox: typeof hinfBox;
+declare const SIMPLE_BOXES_hmhdBox: typeof hmhdBox;
+declare const SIMPLE_BOXES_hntiBox: typeof hntiBox;
+declare const SIMPLE_BOXES_idatBox: typeof idatBox;
+declare const SIMPLE_BOXES_iodsBox: typeof iodsBox;
+declare const SIMPLE_BOXES_ipcoBox: typeof ipcoBox;
+declare const SIMPLE_BOXES_iproBox: typeof iproBox;
+declare const SIMPLE_BOXES_iprpBox: typeof iprpBox;
+declare const SIMPLE_BOXES_j2kHBox: typeof j2kHBox;
+declare const SIMPLE_BOXES_mdatBox: typeof mdatBox;
+declare const SIMPLE_BOXES_mdhdBox: typeof mdhdBox;
+declare const SIMPLE_BOXES_mdiaBox: typeof mdiaBox;
+declare const SIMPLE_BOXES_mecoBox: typeof mecoBox;
+declare const SIMPLE_BOXES_mfhdBox: typeof mfhdBox;
+declare const SIMPLE_BOXES_mfraBox: typeof mfraBox;
+declare const SIMPLE_BOXES_minfBox: typeof minfBox;
+declare const SIMPLE_BOXES_moofBox: typeof moofBox;
+declare const SIMPLE_BOXES_moovBox: typeof moovBox;
+declare const SIMPLE_BOXES_mvexBox: typeof mvexBox;
+declare const SIMPLE_BOXES_mvhdBox: typeof mvhdBox;
+declare const SIMPLE_BOXES_nmhdBox: typeof nmhdBox;
+declare const SIMPLE_BOXES_rinfBox: typeof rinfBox;
+declare const SIMPLE_BOXES_schiBox: typeof schiBox;
+declare const SIMPLE_BOXES_sencBox: typeof sencBox;
+declare const SIMPLE_BOXES_sidxBox: typeof sidxBox;
+declare const SIMPLE_BOXES_sinfBox: typeof sinfBox;
+declare const SIMPLE_BOXES_skipBox: typeof skipBox;
+declare const SIMPLE_BOXES_ssixBox: typeof ssixBox;
+declare const SIMPLE_BOXES_stblBox: typeof stblBox;
+declare const SIMPLE_BOXES_strdBox: typeof strdBox;
+declare const SIMPLE_BOXES_strkBox: typeof strkBox;
+declare const SIMPLE_BOXES_stypBox: typeof stypBox;
+declare const SIMPLE_BOXES_tfdtBox: typeof tfdtBox;
+declare const SIMPLE_BOXES_tfhdBox: typeof tfhdBox;
+declare const SIMPLE_BOXES_tkhdBox: typeof tkhdBox;
+declare const SIMPLE_BOXES_trafBox: typeof trafBox;
+declare const SIMPLE_BOXES_trakBox: typeof trakBox;
+declare const SIMPLE_BOXES_trgrBox: typeof trgrBox;
+declare const SIMPLE_BOXES_trunBox: typeof trunBox;
+declare const SIMPLE_BOXES_udtaBox: typeof udtaBox;
+declare const SIMPLE_BOXES_vttcBox: typeof vttcBox;
+declare const SIMPLE_BOXES_xmlBox: typeof xmlBox;
+declare namespace SIMPLE_BOXES {
+  export { SIMPLE_BOXES_bxmlBox as bxmlBox, SIMPLE_BOXES_dinfBox as dinfBox, SIMPLE_BOXES_edtsBox as edtsBox, SIMPLE_BOXES_emsgBox as emsgBox, SIMPLE_BOXES_etypBox as etypBox, SIMPLE_BOXES_freeBox as freeBox, SIMPLE_BOXES_ftypBox as ftypBox, SIMPLE_BOXES_grplBox as grplBox, SIMPLE_BOXES_hinfBox as hinfBox, SIMPLE_BOXES_hmhdBox as hmhdBox, SIMPLE_BOXES_hntiBox as hntiBox, SIMPLE_BOXES_idatBox as idatBox, SIMPLE_BOXES_iodsBox as iodsBox, SIMPLE_BOXES_ipcoBox as ipcoBox, SIMPLE_BOXES_iproBox as iproBox, SIMPLE_BOXES_iprpBox as iprpBox, SIMPLE_BOXES_j2kHBox as j2kHBox, SIMPLE_BOXES_mdatBox as mdatBox, SIMPLE_BOXES_mdhdBox as mdhdBox, SIMPLE_BOXES_mdiaBox as mdiaBox, SIMPLE_BOXES_mecoBox as mecoBox, SIMPLE_BOXES_mfhdBox as mfhdBox, SIMPLE_BOXES_mfraBox as mfraBox, SIMPLE_BOXES_minfBox as minfBox, SIMPLE_BOXES_moofBox as moofBox, SIMPLE_BOXES_moovBox as moovBox, SIMPLE_BOXES_mvexBox as mvexBox, SIMPLE_BOXES_mvhdBox as mvhdBox, SIMPLE_BOXES_nmhdBox as nmhdBox, SIMPLE_BOXES_rinfBox as rinfBox, SIMPLE_BOXES_schiBox as schiBox, SIMPLE_BOXES_sencBox as sencBox, SIMPLE_BOXES_sidxBox as sidxBox, SIMPLE_BOXES_sinfBox as sinfBox, SIMPLE_BOXES_skipBox as skipBox, SIMPLE_BOXES_ssixBox as ssixBox, SIMPLE_BOXES_stblBox as stblBox, SIMPLE_BOXES_strdBox as strdBox, SIMPLE_BOXES_strkBox as strkBox, SIMPLE_BOXES_stypBox as stypBox, SIMPLE_BOXES_tfdtBox as tfdtBox, SIMPLE_BOXES_tfhdBox as tfhdBox, SIMPLE_BOXES_tkhdBox as tkhdBox, SIMPLE_BOXES_trafBox as trafBox, SIMPLE_BOXES_trakBox as trakBox, SIMPLE_BOXES_trgrBox as trgrBox, SIMPLE_BOXES_trunBox as trunBox, SIMPLE_BOXES_udtaBox as udtaBox, SIMPLE_BOXES_vttcBox as vttcBox, SIMPLE_BOXES_xmlBox as xmlBox };
+}
+
+declare const BoxParser: typeof SIMPLE_BOXES;
+
+export { BoxParser };
