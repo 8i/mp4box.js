@@ -238,6 +238,15 @@ function createFancyTree(parent, fileobj) {
 			boxtreetable.html(generateBoxTable(node.data.box));
 		}
 	};
+	fancytree_options.renderTitle = function(event, data) {
+		var box = data.node.data.box;
+		var el = "<span class='fancytree-title'>";
+		el += box.type + '&nbsp;';
+		if (box.box_name)
+			el += "<span class='boxname'>(" + box.box_name + ")</span>";
+		el += "</span>";
+		return el;
+	};
 	boxtreediv.fancytree(fancytree_options);
 	fileobj.fancytree = boxtreediv.fancytree('getTree');
 }

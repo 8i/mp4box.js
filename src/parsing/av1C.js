@@ -1,8 +1,8 @@
-BoxParser.createBoxCtor("av1C", function(stream) {
+BoxParser.createBoxCtor("av1C", "AV1CodecConfigurationBox", function(stream) {
 	var i;
 	var toparse;
 	var tmp = stream.readUint8();
-	if ((tmp >> 7) & 0x1 !== 1) {
+	if ((tmp >> 7 & 0x1) !== 1) {
 		Log.error("av1C marker problem");
 		return;
 	}

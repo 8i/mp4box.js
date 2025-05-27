@@ -1,4 +1,4 @@
-BoxParser.createFullBoxCtor("senc", function(stream) {
+BoxParser.createFullBoxCtor("senc", "SampleEncryptionBox", function(stream) {
 	// this.parseFullHeader(stream);
 	var sample_count = stream.readUint32();
 	this.samples = [];
